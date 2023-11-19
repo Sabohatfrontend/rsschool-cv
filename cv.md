@@ -1,7 +1,11 @@
 # [rsschool-cv](https://your-github-account.github.io/rsschool-cv/cv)
 
 ## Sabokhat Sobirova
-### &#128231; [ssobirova333@gmail.com](https://ssobirova333@gmail.com) | [linkedin.com/in/sabohat-sobirova-9b24aa210](https://www.linkedin.com/in/sabohat-sobirova-9b24aa210) | [github.com/Sabohatfrontend](https://github.com/Sabohatfrontend)
+
+### &#128231; CONTACTS
+ ***Email:*** [ssobirova333@gmail.com](https://ssobirova333@gmail.com)
+ ***LinkedIn:*** [linkedin.com/in/sabohat-sobirova-9b24aa210](https://www.linkedin.com/in/sabohat-sobirova-9b24aa210)
+ ***Github:*** [github.com/Sabohatfrontend](https://github.com/Sabohatfrontend)
 
 ___
 
@@ -10,7 +14,7 @@ I am Front-end developer with a strong foundation in web development. I am a fas
 ___
 
 ###  PROFESSIONAL EXPERIENCE
- #### iTransition(Tashkent, remote) | Intern Developer(sep/2023-nov/203)
+ **iTransition(Tashkent, remote) | Intern Developer(sep/2023-nov/203)**\
  iTransition is a global software engineering company. I contributed to both front and back-end projects. I worked independently and remotely while managing the course project assigned to me.
 * Implemented a Web application for personal collection management (books, post-stamps, whiskeys, etc. — in the text below these are called items)
 * Developed an admin panel (monitoring drivers, orders, payments, products, warehouses) that simplified order management
@@ -27,9 +31,9 @@ ___
 
 ___
 
-   ### CODE
-   ```
-   router.post('/', async (req, res) => {
+### CODE
+```
+router.post('/', async (req, res) => {
     const { error } = validate(req.body);
     if (error) {
         return res.status(400).send(error.details[0].message);
@@ -52,7 +56,7 @@ ___
 ```
 ___
 ### EDUCATION
-* [2016 National University of Uzbekistan named after Mirzo Ulugbek / Applied mathematics and informatics](https://nuu.uz)
+(2012-2016) - National University of Uzbekistan named after Mirzo Ulugbek / Applied mathematics and informatics [nuu.uz](https://nuu.uz)
 
 ___
 
