@@ -10,7 +10,7 @@
 ___
 
 ### &#128105; SUMMARY
-I am Front-end developer with a strong foundation in web development. I am a fast learner and always eager to expand my knowledge and skills in front-end development. As for listing my top skills, I can name the followings: hard working, attentive to details. I am a team player with good problem-solving skills and a strong work ethic.
+>I am Front-end developer with a strong foundation in web development. I am a fast learner and always eager to expand my knowledge and skills in front-end development. As for listing my top skills, I can name the followings: hard working, attentive to details. I am a team player with good problem-solving skills and a strong work ethic.
 ___
 
 ### &#128188; PROFESSIONAL EXPERIENCE
