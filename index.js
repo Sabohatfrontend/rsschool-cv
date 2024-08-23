@@ -1,43 +1,9 @@
-let sections = document.querySelectorAll('section');
-let sec1 = document.querySelector('.sec-1');
-let navLinks = document.querySelectorAll('.nav-link');
 const navMenu = document.querySelector('.nav-menu');
 const menu = document.querySelector('.nav');
 const navList = document.querySelector('.nav-list');
-
-window.onload = () => {
-    sec1.classList.add('show-animate');
-}
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            sec.classList.add('show-animate');
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            })
-
-        }
-        else {
-            sec.classList.remove('show-animate')
-        }
-    })
-}
-
-function myFunction() {
-    var x = document.getElementById('myTopnav');
-    if (x.className === 'topnav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'topnav';
-    }
-}
+const modeBtn = document.querySelector('.mode-btn');
+const navLinks = document.querySelectorAll('.nav-link');
+const body = document.body;
 
 
 function toggleMobileNav() {
@@ -52,5 +18,23 @@ function closeNav() {
     menu.classList.remove('active-nav');
 }
 
+function toggleMode() {
+    modeBtn.classList.toggle('light-btn');
+    body.classList.toggle('active');
+
+}
+
+const clickNavlink = (event) => {
+    navLinks.forEach(item => {
+        item.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+
+
 navMenu.addEventListener('click', toggleMobileNav);
 navList.addEventListener('click', closeNav);
+modeBtn.addEventListener('click', toggleMode);
+navList.addEventListener('click', (e) => {
+    if (e.target.classList.value !== 'nav-list') clickNavlink(e);
+})
