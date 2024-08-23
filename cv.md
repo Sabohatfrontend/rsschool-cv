@@ -26,34 +26,8 @@ ___
 1. Responsive Web Design
 1. Javascript
 1. Git, Github
-1. React
+1. React, Redux
 1. Node & Express, MongoDB (basic)
-
-___
-
-### &#128187; CODE
-```
-router.post('/', async (req, res) => {
-    const { error } = validate(req.body);
-    if (error) {
-        return res.status(400).send(error.details[0].message);
-    }
-
-    const user = await User.findOne({ email: req.body.email });
-    if (!user) {
-        return res.status(400).send('Email or Password is invalid!');
-    }
-
-    const isValidPassword = await bcrypt.compare(req.body.password, user.password);
-
-    if (!isValidPassword) {
-        return res.status(400).send('Email or Password is invalid!');
-    }
-
-    const token = user.generateAuthToken();
-    res.header('x-auth-token', token).send(true);
-});
-```
 ___
 ### &#127979; EDUCATION
 (2012-2016) - National University of Uzbekistan named after Mirzo Ulugbek / Applied mathematics and informatics [nuu.uz](https://nuu.uz)
@@ -61,7 +35,7 @@ ___
 ___
 
 ### COURSES
-* [Javascript/Front-end Mentoring Program (in English)](https://rs.school/js-en/) - ongoing
+* [Javascript/Front-end Mentoring Program (in English)](https://rs.school/js-en/) 
 * [JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/)
 * [Online Html and CSS foundation course](https://youtu.be/h2ucBIYlS1Q?si=CLbTA2G-zNicWqE_)
 
